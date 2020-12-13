@@ -6,12 +6,13 @@ This is an app where a user can see a list of video games. It includes the title
 
 https://videogameclient.herokuapp.com/
 
-# Technologies used
+# Technologies and Deployment sites used
 
 1. Ruby on Rails
 2. React
 3. Heroku
 4. Github
+5. Netlify
 
 #  Road Blocks
 
