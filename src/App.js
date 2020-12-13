@@ -19,7 +19,7 @@ function App() {
 
   //Function to make api call to get games
   const getGames = async () => {
-    const response = await fetch("https://videogamebackend.herokuapp.com/")
+    const response = await fetch("https://videogamebackend.herokuapp.com/games")
     const data = await response.json()
     setGames(data)
   }
@@ -43,7 +43,7 @@ function App() {
           <div>
           <button onClick={async () => {
             //Make delete request
-            await fetch("https://videogamebackend.herokuapp.com/" + game.id, {
+            await fetch("https://videogamebackend.herokuapp.com/games" + game.id, {
               method: "delete"
             })
             //Get updated list
@@ -65,7 +65,7 @@ function App() {
   const handleCreate = async (event) => {
     event.preventDefault() //prevent page refresh
     //making the post request to create a new game
-    await fetch("https://videogamebackend.herokuapp.com/", {
+    await fetch("https://videogamebackend.herokuapp.com/games", {
       method: "post",
       headers: {
         "Content-Type":"application/json"
