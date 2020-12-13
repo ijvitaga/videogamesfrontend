@@ -2,9 +2,9 @@
 
 This is an app where a user can see a list of video games. It includes the title, release date, genre, ESRB, a poster, and the company who published the game. A user can also add, update, or delete a video game.
 
-# Heroku link
+# Netlify link
 
-https://videogameclient.herokuapp.com/
+https://tender-nightingale-999369.netlify.app/
 
 # Technologies and Deployment sites used
 
