@@ -12,11 +12,10 @@ https://videogameclient.herokuapp.com/
 2. React
 3. Heroku
 4. Github
-# Unsolved Problems
 
-1. Editing a video game in the website as opposed to in POSTMAN.
+#  Road Blocks
 
-2. I keep getting an error when pulling the JSON data to the website from the array of video games. Sometimes the app works and sometimes it doesn't. To make it work I have to change line 101 in App.js from:
+1. I keep getting an error when pulling the JSON data to the website from the array of video games. Sometimes the app works and sometimes it doesn't. To make it work I have to change line 101 in App.js from:
 
 {games.games.length > 0 ? loaded() : <h2>There are no Video Games</h2>}
 
@@ -32,12 +31,16 @@ and save it again.
 
 This happens during development and after deploying through Heroku.
 
+2. Heroku deployment - When I deployed the backend I ran into some errors. In the package.json scripts- in the build script I had to add "CI= " for it to work.
+
+3. Netlify deployment - The communication between the backend fetch and the frontend was not working with the Heroku link. I had to figure out the links syntax.
+
+
 # Notes
 
-1. Figure out how to solve problem #2 above.
-2. Add styling.
-3. Add a login and signup for user experience.
-4. Add an edit button on the website for a User.
+1. Add styling.
+2. Add a login and signup for user experience.
+3. Add an edit button on the website for a User.
 
 # Getting Started with Create React App
 
