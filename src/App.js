@@ -43,7 +43,7 @@ function App() {
           <div>
           <button onClick={async () => {
             //Make delete request
-            await fetch("https://videogamebackend.herokuapp.com/games" + game.id, {
+            await fetch("https://videogamebackend.herokuapp.com/games/" + game.id, {
               method: "delete"
             })
             //Get updated list
